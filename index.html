@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Probabilidad y Estadística</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="example-section">
+        <h2>Ejemplo 1: Control de Contenido Neto</h2>
+        <p>Se realizó un muestreo aleatorio simple de 100 botellas durante un turno de producción normal. El valor nominal esperado para cada unidad es de 500 ml.</p>
+        <div class="data-section">
+            <h3>Datos en ml:</h3>
+            <div class="data-grid">
+                <span>502</span><span>498</span><span>505</span><span>495</span><span>500</span><span>501</span><span>497</span><span>503</span><span>499</span><span>500</span>
+                <span>506</span><span>494</span><span>501</span><span>499</span><span>502</span><span>498</span><span>504</span><span>500</span><span>496</span><span>503</span>
+                <span>498</span><span>501</span><span>492</span><span>507</span><span>500</span><span>499</span><span>505</span><span>502</span><span>497</span><span>501</span>
+                <span>500</span><span>496</span><span>503</span><span>499</span><span>504</span><span>502</span><span>498</span><span>501</span><span>500</span><span>493</span>
+                <span>508</span><span>499</span><span>502</span><span>497</span><span>501</span><span>500</span><span>496</span><span>504</span><span>503</span><span>498</span>
+                <span>495</span><span>502</span><span>500</span><span>501</span><span>499</span><span>506</span><span>497</span><span>502</span><span>500</span><span>504</span>
+                <span>503</span><span>498</span><span>501</span><span>496</span><span>502</span><span>500</span><span>499</span><span>505</span><span>494</span><span>501</span>
+                <span>500</span><span>502</span><span>497</span><span>503</span><span>498</span><span>501</span><span>499</span><span>506</span><span>500</span><span>502</span>
+                <span>496</span><span>504</span><span>501</span><span>500</span><span>498</span><span>503</span><span>497</span><span>502</span><span>501</span><span>495</span>
+                <span>499</span><span>500</span><span>505</span><span>502</span><span>498</span><span>501</span><span>496</span><span>503</span><span>500</span><span>497</span>
+            </div>
+
+            <table class="tabla-formal">
+                <thead>
+                    <tr>
+                        <th>Clase (ml)</th>
+                        <th>fa</th>
+                        <th>fr</th>
+                        <th>facum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>492</td><td>1</td><td>0.01</td><td>0.01</td></tr>
+                    <tr><td>493</td><td>1</td><td>0.01</td><td>0.02</td></tr>
+                    <tr><td>494</td><td>2</td><td>0.02</td><td>0.04</td></tr>
+                    <tr><td>495</td><td>3</td><td>0.03</td><td>0.07</td></tr>
+                    <tr><td>496</td><td>6</td><td>0.06</td><td>0.13</td></tr>
+                    <tr><td>497</td><td>7</td><td>0.07</td><td>0.20</td></tr>
+                    <tr><td>498</td><td>9</td><td>0.09</td><td>0.29</td></tr>
+                    <tr><td>499</td><td>9</td><td>0.09</td><td>0.38</td></tr>
+                    <tr><td>500</td><td>16</td><td>0.16</td><td>0.54</td></tr>
+                    <tr><td>501</td><td>13</td><td>0.13</td><td>0.67</td></tr>
+                    <tr><td>502</td><td>11</td><td>0.11</td><td>0.78</td></tr>
+                    <tr><td>503</td><td>8</td><td>0.08</td><td>0.86</td></tr>
+                    <tr><td>504</td><td>5</td><td>0.05</td><td>0.91</td></tr>
+                    <tr><td>505</td><td>4</td><td>0.04</td><td>0.95</td></tr>
+                    <tr><td>506</td><td>3</td><td>0.03</td><td>0.98</td></tr>
+                    <tr><td>507</td><td>1</td><td>0.01</td><td>0.99</td></tr>
+                    <tr><td>508</td><td>1</td><td>0.01</td><td>1.00</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="dashboard">
+        <h2 class="dashboard-title">Visualización de Análisis Estadístico</h2>
+        <div class="charts-container">
+            <div class="chart-card">
+                <h3>1. Histograma</h3>
+                <img src="imagenes/Histograma_trans (1).png" alt="Histograma" class="chart-img">
+            </div>
+            <div class="chart-card">
+                <h3>2. Polígono de Frecuencias</h3>
+                <img src="imagenes/Poligono_Refrescos_trans.png" alt="Polígono" class="chart-img">
+            </div>
+            <div class="chart-card">
+                <h3>3. Ojiva (Frec. Acumulada)</h3>
+                <img src="imagenes/Ojiva_trans (1).png" alt="Ojiva" class="chart-img">
+            </div>
+            <div class="chart-card">
+                <h3>4. Composición Relativa (Pastel)</h3>
+                <img src="imagenes/Pie_trans (1).png" alt="Diagrama de pastel" class="chart-img">
+            </div>
+            <div class="chart-card">
+                <h3>5. Gráfico de Barras (Comparativo)</h3>
+                <img src="imagenes/Barras_trans (1).png" alt="Gráfico de barras" class="chart-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="example-section">
+        <h2>Ejemplo 2: Uso de Redes Sociales</h2>
+        <p>Estudio realizado a 100 jóvenes universitarios sobre el tiempo promedio diario (en horas) dedicado a redes sociales durante periodos de exámenes.</p>
+        
+        <div class="data-section">
+            <h3>Datos en horas:</h3>
+            <div class="data-grid">
+                <span>2.45</span><span>3.12</span><span>1.80</span><span>4.21</span><span>3.55</span><span>2.10</span><span>2.75</span><span>3.90</span><span>1.45</span><span>2.88</span>
+                <span>3.20</span><span>2.95</span><span>4.50</span><span>1.25</span><span>2.30</span><span>3.65</span><span>4.10</span><span>2.40</span><span>3.15</span><span>2.60</span>
+                <span>1.95</span><span>3.80</span><span>2.15</span><span>3.40</span><span>4.60</span><span>2.25</span><span>3.05</span><span>1.70</span><span>2.55</span><span>3.35</span>
+                <span>4.05</span><span>2.85</span><span>3.75</span><span>2.50</span><span>1.60</span><span>3.95</span><span>2.20</span><span>3.30</span><span>4.40</span><span>2.70</span>
+                <span>3.10</span><span>1.85</span><span>2.65</span><span>4.15</span><span>3.50</span><span>2.05</span><span>3.85</span><span>2.35</span><span>1.55</span><span>3.25</span>
+                <span>2.90</span><span>3.70</span><span>4.75</span><span>1.40</span><span>2.25</span><span>3.60</span><span>2.55</span><span>3.00</span><span>4.30</span><span>1.90</span>
+                <span>3.45</span><span>2.15</span><span>2.80</span><span>4.00</span><span>3.10</span><span>2.45</span><span>1.75</span><span>3.90</span><span>2.20</span><span>3.55</span>
+                <span>1.35</span><span>3.30</span><span>4.25</span><span>2.60</span><span>3.80</span><span>2.00</span><span>3.15</span><span>4.45</span><span>2.35</span><span>2.95</span>
+                <span>3.65</span><span>2.10</span><span>1.65</span><span>3.40</span><span>2.75</span><span>4.10</span><span>2.50</span><span>3.20</span><span>1.85</span><span>3.05</span>
+                <span>4.20</span><span>1.50</span><span>2.40</span><span>3.75</span><span>3.35</span><span>2.85</span><span>4.65</span><span>2.25</span><span>3.10</span><span>2.65</span>
+            </div>
+
+            <table class="tabla-formal">
+                <thead>
+                    <tr>
+                        <th>Clase</th>
+                        <th>Límite inferior</th>
+                        <th>Límite superior</th>
+                        <th>Marca de Clase</th>
+                        <th>fa</th>
+                        <th>fr</th>
+                        <th>facum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>0</td><td>1.25</td><td>1.69</td><td>1.47</td><td>8</td><td>0.08</td><td>0.08</td></tr>
+                    <tr><td>1</td><td>1.69</td><td>2.12</td><td>1.91</td><td>11</td><td>0.11</td><td>0.19</td></tr>
+                    <tr><td>2</td><td>2.12</td><td>2.56</td><td>2.34</td><td>18</td><td>0.18</td><td>0.37</td></tr>
+                    <tr><td>3</td><td>2.56</td><td>3.00</td><td>2.78</td><td>14</td><td>0.14</td><td>0.51</td></tr>
+                    <tr><td>4</td><td>3.00</td><td>3.44</td><td>3.22</td><td>18</td><td>0.18</td><td>0.69</td></tr>
+                    <tr><td>5</td><td>3.44</td><td>3.88</td><td>3.66</td><td>13</td><td>0.13</td><td>0.82</td></tr>
+                    <tr><td>6</td><td>3.88</td><td>4.31</td><td>4.09</td><td>12</td><td>0.12</td><td>0.94</td></tr>
+                    <tr><td>7</td><td>4.31</td><td>4.75</td><td>4.53</td><td>6</td><td>0.06</td><td>1.00</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+<section class="dashboard">
+        <h2 class="dashboard-title">Visualización de Análisis Estadístico</h2>
+        <div class="charts-container">
+            <div class="chart-card">
+                <h3>1. Histograma</h3>
+                <img src="imagenes/Histograma_trans2 (1).png" alt="Histograma" class="chart-img">
+            </div>
+            <div class="chart-card">
+                <h3>2. Polígono de Frecuencias</h3>
+                <img src="imagenes/Poligono_trans2 (1).png" alt="Polígono" class="chart-img">
+            </div>
+            <div class="chart-card">
+                <h3>3. Ojiva (Frec. Acumulada)</h3>
+                <img src="imagenes/Ojiva_trans2 (2).png" alt="Ojiva" class="chart-img">
+            </div>
+            <div class="chart-card">
+                <h3>4. Composición Relativa (Pastel)</h3>
+                <img src="imagenes/Pastel_trans2 (1).png" alt="Diagrama de pastel" class="chart-img">
+            </div>
+            <div class="chart-card">
+                <h3>5. Gráfico de Barras (Comparativo)</h3>
+                <img src="imagenes/Barras_trans2 (1).png" alt="Gráfico de barras" class="chart-img">
+            </div>
+        </div>
+    </section>
+     <section class="example-section">
+        <h2>Ejemplo 3: Uso de Redes Sociales</h2>
+        <p>Se encuestó a 100 profesionales del área de tecnología sobre cuál es el navegador web que utilizan como herramienta principal de trabajo. Las respuestas posibles fueron: Chrome, Firefox, Safari, Edge y Brave.</p>
+        
+<div class="data-grid">
+    <span>Chrome</span><span>Firefox</span><span>Chrome</span><span>Edge</span><span>Brave</span><span>Chrome</span><span>Safari</span><span>Chrome</span><span>Firefox</span><span>Edge</span>
+    <span>Safari</span><span>Chrome</span><span>Chrome</span><span>Brave</span><span>Firefox</span><span>Chrome</span><span>Edge</span><span>Chrome</span><span>Safari</span><span>Chrome</span>
+    <span>Firefox</span><span>Edge</span><span>Chrome</span><span>Chrome</span><span>Brave</span><span>Safari</span><span>Chrome</span><span>Firefox</span><span>Chrome</span><span>Edge</span>
+    <span>Chrome</span><span>Brave</span><span>Safari</span><span>Chrome</span><span>Firefox</span><span>Edge</span><span>Chrome</span><span>Chrome</span><span>Brave</span><span>Safari</span>
+    <span>Edge</span><span>Chrome</span><span>Firefox</span><span>Chrome</span><span>Safari</span><span>Brave</span><span>Chrome</span><span>Edge</span><span>Firefox</span><span>Chrome</span>
+    <span>Chrome</span><span>Safari</span><span>Edge</span><span>Brave</span><span>Chrome</span><span>Firefox</span><span>Chrome</span><span>Chrome</span><span>Safari</span><span>Edge</span>
+    <span>Firefox</span><span>Chrome</span><span>Brave</span><span>Edge</span><span>Chrome</span><span>Safari</span><span>Chrome</span><span>Firefox</span><span>Edge</span><span>Chrome</span>
+    <span>Brave</span><span>Chrome</span><span>Safari</span><span>Firefox</span><span>Chrome</span><span>Edge</span><span>Chrome</span><span>Brave</span><span>Safari</span><span>Chrome</span>
+    <span>Edge</span><span>Firefox</span><span>Chrome</span><span>Chrome</span><span>Safari</span><span>Brave</span><span>Chrome</span><span>Edge</span><span>Firefox</span><span>Chrome</span>
+    <span>Chrome</span><span>Safari</span><span>Brave</span><span>Edge</span><span>Chrome</span><span>Firefox</span><span>Chrome</span><span>Chrome</span><span>Safari</span><span>Edge</span>
+</div>
+<table class="tabla-formal">
+    <thead>
+        <tr>
+            <th>Clase</th>
+            <th>fa</th>
+            <th>fr</th>
+            <th>facum</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Brave</td>
+            <td>12</td>
+            <td>0.12</td>
+            <td>0.12</td>
+        </tr>
+        <tr>
+            <td>Chrome</td>
+            <td>41</td>
+            <td>0.41</td>
+            <td>0.53</td>
+        </tr>
+        <tr>
+            <td>Edge</td>
+            <td>17</td>
+            <td>0.17</td>
+            <td>0.70</td>
+        </tr>
+        <tr>
+            <td>Firefox</td>
+            <td>15</td>
+            <td>0.15</td>
+            <td>0.85</td>
+        </tr>
+        <tr>
+            <td>Safari</td>
+            <td>15</td>
+            <td>0.15</td>
+            <td>1.00</td>
+        </tr>
+    </tbody>
+   
+    
+</table>
+<section class="dashboard">
+        <h2 class="dashboard-title">Visualización de Análisis Estadístico</h2>
+        <div class="charts-container">
+            <div class="chart-card">
+                <h3>1. Histograma</h3>
+                <img src="imagenes/Histograma_trans3 (1).png" alt="Histograma" class="chart-img">
+            </div>
+            <div class="chart-card">
+                <h3>2. Polígono de Frecuencias</h3>
+                <img src="imagenes/Poligono_trans3 (1).png" alt="Polígono" class="chart-img">
+            </div>
+            <div class="chart-card">
+                <h3>3. Ojiva (Frec. Acumulada)</h3>
+                <img src="imagenes/Ojiva_trans3 (1).png" alt="Ojiva" class="chart-img">
+            </div>
+            <div class="chart-card">
+                <h3>4. Composición Relativa (Pastel)</h3>
+                <img src="imagenes/Pie_Navegadores_trans3 (1).png" alt="Diagrama de pastel" class="chart-img">
+            </div>
+            <div class="chart-card">
+                <h3>5. Gráfico de Barras (Comparativo)</h3>
+                <img src="imagenes/Barras_trans3 (1).png" alt="Gráfico de barras" class="chart-img">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

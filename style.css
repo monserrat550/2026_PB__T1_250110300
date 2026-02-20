@@ -1,0 +1,272 @@
+/* Configuraciones base */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.8;
+    color: #2c3e50;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 50px 20px;
+}
+
+/* Contenedor tipo "Hoja de Reporte" */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 60px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #1a3a5a; /* Franja decorativa formal */
+}
+
+/* Títulos */
+h2 {
+    color: #1a3a5a;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #d1d8e0;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Párrafos */
+p {
+    text-align: justify;
+    margin-bottom: 25px;
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+/* Estilos para la Tabla de Frecuencias */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    font-family: Arial, sans-serif; /* Tabla en Sans-serif para legibilidad */
+    font-size: 0.95rem;
+}
+
+table th {
+    background-color: #1a3a5a;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #d1d8e0;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Filas alternas para fácil lectura */
+}
+
+table tr:hover {
+    background-color: #f1f4f9; /* Efecto sutil al pasar el mouse */
+}
+
+.highlight {
+    font-weight: bold;
+    color: #1a3a5a;
+}
+/* Sección de la Matriz de Datos */
+.data-section {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.data-section h3 {
+    font-size: 1.1rem;
+    color: #495057;
+    margin-bottom: 15px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 columnas iguales */
+    gap: 8px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada para datos */
+    font-size: 0.9rem;
+}
+h3 {
+    text-align: center;
+}
+.data-grid span {
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.data-grid span:hover {
+    background-color: #e3f2fd;
+    border-color: #1a3a5a;
+    color: #1a3a5a;
+    font-weight: bold;
+}
+/* Estilo formal para tablas estadísticas */
+.tabla-formal {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #ffffff;
+    /* Sombreado perimetral neutro */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+.tabla-formal thead {
+    background-color: #343a40; /* Gris oscuro industrial */
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.tabla-formal th, 
+.tabla-formal td {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Colores neutros alternados (Zebra striping) */
+.tabla-formal tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Efecto de resaltado al pasar el mouse */
+.tabla-formal tbody tr:hover {
+    background-color: #eceff1;
+    transition: background-color 0.3s ease;
+}
+
+.tabla-formal td {
+    color: #495057;
+    font-weight: 400;
+}
+
+/* Resalte para la columna de clases */
+.tabla-formal td:first-child {
+    font-weight: 600;
+    color: #212529;
+    background-color: rgba(0,0,0,0.01);
+}
+/* Estilos para el contenedor principal de gráficas */
+.dashboard {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fcfcfc;
+}
+
+.dashboard-title {
+    text-align: left;
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    border-left: 5px solid #444;
+    padding-left: 15px;
+}
+
+/* Contenedor de la rejilla para las gráficas */
+.charts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Tarjeta individual de cada gráfica */
+.chart-card {
+    background: #fff;
+    border-radius: 50px;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    transition: transform 0.2s ease;
+}
+
+.chart-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+}
+
+.chart-card h3 {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Contenedor de la imagen de la gráfica */
+.chart-container-img {
+    height: 180px; /* Altura fija para todas las imágenes */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa; /* Fondo ligero para la imagen */
+    border-radius: 6px;
+    margin-bottom: 15px;
+    overflow: hidden; /* Asegura que la imagen no se desborde */
+    border: 1px solid #e5e5e5;
+}
+
+.chart-img {
+    max-height: 100%; /* La imagen se ajusta a la altura del contenedor */
+    max-width: 100%; /* La imagen se ajusta al ancho del contenedor */
+    object-fit: contain; /* Mantiene la relación de aspecto sin recortar */
+    display: block; /* Elimina espacios extra */
+    transition: transform 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Efecto de zoom sutil al pasar el mouse sobre la imagen */
+.chart-img:hover {
+    transform: scale(1.05);
+}
+
+.chart-card p {
+    font-size: 0.85rem;
+    color: #777;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Estilos para la figura principal (si la mantienes) */
+.report-figure {
+    margin: 40px 0;
+    text-align: center;
+    background-color: #fcfcfc;
+    padding: 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.figure-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.figure-caption {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #6a6a6a;
+    line-height: 1.5;
+}
